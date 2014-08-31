@@ -4,7 +4,7 @@ USER=${USER:-admin}
 PASSWORD=${PASSWORD:-admin}
 LANG=${LANG:-en_US.UTF-8}
 TIMEZONE=${TIMEZONE:-Etc/UTC}
-DB_PASS=${DB_PASS:-admin}
+MYSQL_PASS=${MYSQL_PASS:-admin}
 
 echo ${TIMEZONE} > /etc/timezone
 dpkg-reconfigure --frontend noninteractive tzdata
@@ -19,6 +19,6 @@ fi
 /etc/init.d/apache2 start 
 
 /etc/init.d/mysql start
-mysqladmin -u root password "$DB_PASS"
+mysqladmin -u root password "$MYSQL_PASS"
 
 /usr/sbin/sshd -D
