@@ -20,6 +20,6 @@ ADD init.sh     /src/init.sh
 
 EXPOSE 80
 
-# Start ssh services.
+# Start services.
 CMD ["/src/init.sh"]
 
