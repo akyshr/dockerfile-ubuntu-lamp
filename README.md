@@ -17,6 +17,7 @@ docker run -d akyshr/ubuntu-lamp
 
 ###Configuration Parameters
 Below is the list of parameters that can be set using environment variables.
+
 * USER : user account name. Defaults to 'admin'.
 * PASSWORD : user password. Defaults to 'admin'.
 * LANG  : Language. Defaults to 'en_US.UTF-8'.
